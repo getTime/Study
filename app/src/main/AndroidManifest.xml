@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yyx.study">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -17,12 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".video.VideoActivity"></activity>
+        <activity android:name=".video.VideoActivity" />
         <activity
             android:name=".video.FullScreenPlayVideoActivity"
             android:screenOrientation="landscape"
-            android:theme="@style/FullScreenTheme">
-        </activity>
+            android:theme="@style/FullScreenTheme"></activity>
+        <activity android:name=".main.AutoLayoutActivity"></activity>
     </application>
 
 </manifest>

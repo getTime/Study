@@ -17,7 +17,7 @@ public class VideoPlayerHelper {
     private ViewGroup mSmallVideoPlayerContainer;//小窗口播放父容器
     private int mCurrPlayPosition = -1;//列表中当前正在播放的视频的位置索引
     private int mLastPlayPosition = -1;//列表中上次播放的视频的位置索引
-
+    public static boolean isFullScreen;
     private VideoPlayerHelper(Context context) {
 
         mVideoPlayerView = new VideoPlayerView(context);
@@ -98,7 +98,7 @@ public class VideoPlayerHelper {
      * @param exitFullScreenListener
      */
     public void fullScreen(ViewGroup parent, VideoPlayerView.ExitFullScreenListener exitFullScreenListener) {
-
+        isFullScreen=true;
         mParent = (ViewGroup)mVideoPlayerView.getParent();
         mParent.removeView(mVideoPlayerView);
         mVideoPlayerView.setPlayScreenState(PlayScreenState.FULL_SCREEN);
@@ -113,6 +113,7 @@ public class VideoPlayerHelper {
      * @param state
      */
     public void exitFullScreen(VideoPlayState state) {
+        isFullScreen=false;
 
         mVideoPlayerView.setPlayScreenState(PlayScreenState.NORMAL);
         ViewGroup parent = (ViewGroup) mVideoPlayerView.getParent();

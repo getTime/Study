@@ -47,4 +47,11 @@ public class VideoActivity extends Activity {
         super.onDestroy();
     }
 
+    @Override
+    protected void onPause() {
+        if (!VideoPlayerHelper.isFullScreen) {
+            VideoPlayerHelper.getInstance().pause();
+        }
+        super.onPause();
+    }
 }

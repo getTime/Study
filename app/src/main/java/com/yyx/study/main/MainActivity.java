@@ -20,5 +20,9 @@ public class MainActivity extends Activity {
     public void onPlayVideo(View view) {
         startActivity(new Intent(this, VideoActivity.class));
     }
+
+    public void onAutoLayout(View view) {
+        startActivity(new Intent(this, AutoLayoutActivity.class));
+    }
 }
 
