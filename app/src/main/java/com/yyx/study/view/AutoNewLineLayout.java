@@ -146,7 +146,6 @@ public class AutoNewLineLayout extends ViewGroup {
             rowIndex++;
         }
     }
-
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
         return new MarginLayoutParams(getContext(), attrs);
