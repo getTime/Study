@@ -3,19 +3,26 @@
     xmlns:tools="http://schema s.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yyx.study.main.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.yyx.study.main.MainActivity">
 
     <Button
         android:id="@+id/btn_play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="播放视频"
-        android:onClick="onPlayVideo"/>
+        android:onClick="onPlayVideo"
+        android:text="播放视频" />
+
     <Button
         android:id="@+id/btn_auto_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自动换行"
-        android:onClick="onAutoLayout" />
+        android:onClick="onAutoLayout"
+        android:text="自动换行" />
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
