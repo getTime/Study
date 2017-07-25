@@ -7,6 +7,9 @@ import android.widget.TextView;
 import com.yyx.study.R;
 import com.yyx.study.view.AutoNewLineLayout;
 
+/**
+ * FlowLayout 流式布局
+ */
 public class AutoLayoutActivity extends Activity {
 
     AutoNewLineLayout autoNewLineLayout;
