@@ -3,6 +3,9 @@
     package="com.yyx.study">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--开启硬件加速-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"

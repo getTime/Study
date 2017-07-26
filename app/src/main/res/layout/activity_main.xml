@@ -25,6 +25,12 @@
         android:id="@+id/et_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="根据空格分隔数据"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="根据空格分隔数据" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRequestPermissions"
+        android:text="请求权限" />
 </LinearLayout>
