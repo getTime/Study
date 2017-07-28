@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.ViewGroup;
 
 import com.yyx.study.R;
-import com.yyx.study.Receiver.HomeWatcherReceiver;
+import com.yyx.study.receiver.HomeWatcherReceiver;
 
 
 

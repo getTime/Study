@@ -25,8 +25,12 @@
         <activity
             android:name=".video.FullScreenPlayVideoActivity"
             android:screenOrientation="landscape"
-            android:theme="@style/FullScreenTheme"></activity>
-        <activity android:name=".main.AutoLayoutActivity"></activity>
+            android:theme="@style/FullScreenTheme" />
+        <activity android:name=".main.AutoLayoutActivity" />
+        <activity android:name=".edittext.LvEtActivity"></activity>
+        <activity android:name=".edittext.TestActivity">
+
+        </activity>
     </application>
 
 </manifest>

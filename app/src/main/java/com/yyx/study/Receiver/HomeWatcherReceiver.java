@@ -1,4 +1,4 @@
-package com.yyx.study.Receiver;
+package com.yyx.study.receiver;
 
 
 import android.content.BroadcastReceiver;

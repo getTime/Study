@@ -24,12 +24,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yyx.study.R;
+import com.yyx.study.edittext.LvEtActivity;
 import com.yyx.study.video.FullScreenPlayVideoActivity;
 import com.yyx.study.video.VideoActivity;
 
 public class MainActivity extends Activity implements TextWatcher, View.OnKeyListener {
     private EditText etContent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +45,9 @@ public class MainActivity extends Activity implements TextWatcher, View.OnKeyLis
 
     public void onAutoLayout(View view) {
         startActivity(new Intent(this, AutoLayoutActivity.class));
+    }
+    public void onLvEt(View view){
+        startActivity(new Intent(this, LvEtActivity.class));
     }
 
     /**
